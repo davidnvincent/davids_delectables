@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>David's Delectables</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="css.css">
+    <script type="text/javascript" src="script.js"></script>
+
+  </head>
+
+  <body>
+    <div class="menu">
+      <li id="logo">
+        <a href="index.html"><img src="images/logo.png" alt="logo" width="100"></a>
+      </li>
+      <li id="title">David's Delectables</li>
+      <li><a class="menu" href="index.html">Home</a></li>
+      <li><a class="menu" href="recipes.html">Recipes</a></li>
+      <li><a class="menu" href="contact.html">Contact</a></li>
+    </div>
+
+    <h1 class="contact">Contact</h1>
+    <p class="contact">We'd love to hear from you!</p>
+
+    <form id="contact_form" class="contact" action="/contact_handler" method="post">
+      <br>
+      <input type="text" id="fname" name="firstname" placeholder="First name">
+      <input type="text" id="lname" name="lastname" placeholder="Last name">
+      <br><br>
+      <input type="text" id="subject" name="subject" placeholder="Subject">
+      <br><br>
+      <textarea id="message" name="message" placeholder="What's on your mind?"></textarea>
+      <br>
+      <button type="submit">Submit</button>
+      <br><br>
+    </form>
+
+  </body>
+
+</html>

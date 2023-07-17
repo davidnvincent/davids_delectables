@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>David's Delectables</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="icon" href="images/icon.png">
+
+    <script type="text/javascript" src="script.js"></script>
+
+
+  </head>
+
+  <body onload="slideshow(0)">
+
+    <div class="menu">
+      <li id="logo">
+        <a href="index.html"><img src="images/logo.png" alt="logo" width="100"></a>
+      </li>
+      <li id="title">David's Delectables</li>
+      <li><a class="menu" href="index.html">Home</a></li>
+      <li><a class="menu" href="recipes.html">Recipes</a></li>
+      <li><a class="menu" href="contact.html">Contact</a></li>
+      <!-- failed attempt... -->
+      <!-- <li class="dropdown">
+        <a href="" class="dropbtn">Dropdown</a>
+        <div class="dropdown-items">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </li> -->
+    </div>
+
+    <div class="main">
+
+      <div class="about">
+
+        <p>Sick of scrolling through an entire page of nonsense just to find
+          the actual recipe you clicked on for? </p>
+        <p>We got you!</p>
+        <p>David's Delectables takes a minimalistic approach to providing
+          you with the best recipes a home cook could ask for!</p>
+        <p>The search for the perfect one-stop shop for recipes ends here!</p>
+
+      </div>
+
+      <div class="slideshow">
+          <!-- arrow characters found on: https://mcdlr.com/8/ -->
+          <a class="prev" onclick="slideshow(-1)" name="prevSlide">&#10094;</a>
+          <img name="currentImage" width="500" height="400">
+          <a class="next" onclick="slideshow(1)" name="nextSlide">&#10095;</a>
+      </div>
+
+    </div>
+
+
+    <footer>
+
+      <form class="newsletter" action="/newsletter_handler" method="post">
+          <p>Sign up for our newsletter and discover fresh recipes immediately!</p>
+          <input type="text" id="name" name="name" placeholder="Name">
+          <input type="email" id="email" name="email" placeholder="Email">
+          <br><br>
+          <button type="submit">Subscribe</button>
+          <br><br>
+      </form>
+
+      <p>
+        <em>Credit to Chef Sophie Cavanaugh for recipes <3 </em>
+      </p>
+    </footer>
+
+
+
+  </body>
+
+</html>
